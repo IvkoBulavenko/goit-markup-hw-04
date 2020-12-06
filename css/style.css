@@ -10,6 +10,7 @@
   --second-background: #f5f4fa;
   --footer-background: #2f303a;
   --border-color-projects: #EEEEEE;
+  --advantages-background-img: #F5F4FA;
 }
 
 *,
@@ -56,6 +57,10 @@ li a {
   display: flex;
   align-items: center;
 }
+.header-contacts {
+  margin-right: 10px;
+  
+}
 
 .navigation {
   display: flex;
@@ -84,7 +89,10 @@ li a {
 nav a,
 .address-nav a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
+
 .address-nav {
   display: flex;
   margin-left: auto;
@@ -110,11 +118,7 @@ nav a,
   margin-right: 0;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.site-nav .current:visited {
-  color: var(--accent-color);
-}
+
 .address-nav a {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -125,17 +129,25 @@ nav a,
 }
 .address-nav .link:hover,
 .address-nav .link:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
 .address-nav .number {
   margin-left: 50px;
 }
 /* h1 Заголовок h1 */
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   padding: 200px 0;
   color: var(--primary-white-color);
-  background-color: #2f303a;
+  background: #C4C4C4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-hero.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -201,6 +213,16 @@ nav a,
 .advantages-item:last-child {
   margin-right: 0;
 }
+.advantages-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--advantages-background-img);
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
 /* Сферы деятельности */
 .section {
   padding-top: 94px;
@@ -240,8 +262,8 @@ nav a,
 .about-team {
   display: block;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 16px;
 }
 .team-item-title {
   margin-bottom: 50px;
@@ -265,6 +287,37 @@ nav a,
   line-height: 1.19;
   text-align: center;
 }
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+
+.social-list-item-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  
+}
+.social-list-item-link:hover,
+.social-list-item-link:focus {
+  background-color: var(--accent-color);
+  
+}
+.social-list-item-link:hover svg,
+.social-list-item-link:focus svg {
+fill:  var(--primary-white-color);
+
+}
+
+
+
+
 
 /* Футер */
 .box .logo-footer {
