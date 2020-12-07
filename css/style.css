@@ -125,6 +125,7 @@ nav a,
   line-height: 1.14;
   letter-spacing: 0.02em;
   font-style: normal;
+  fill: var(--primary-text-color);
 }
 .address-nav .link:hover,
 .address-nav .link:focus {
