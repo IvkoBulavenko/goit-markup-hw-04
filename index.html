@@ -46,7 +46,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
             </div>
             
         </section>
@@ -101,9 +101,15 @@
             <div class="container">
                 <h2 class="product-item-title">Чем мы занимаемся</h2>
                 <ul class="product-list">
-                    <li><img src="./images/coding.jpg" alt="Разработка веб" width="370" height="294"></li>
-                    <li><img src="./images/mobileaps.jpg" alt="Адаптивность" width="370" height="294"></li>
-                    <li><img src="./images/interface.jpg" alt="Адаптивность" width="370" height="294"></li>
+                    <li class="product-item"><img src="./images/coding.jpg" alt="Разработка веб" width="370" height="294">
+                    <p class="product-title">Десктопные приложения</p>
+                    </li>
+                    <li class="product-item"><img src="./images/mobileaps.jpg" alt="Адаптивность" width="370" height="294">
+                    <p class="product-title">Мобильные приложения</p>
+                    </li>
+                    <li class="product-item"><img src="./images/interface.jpg" alt="Адаптивность" width="370" height="294">
+                    <p class="product-title">Дизайнерские решения</p>
+                    </li>
                 
                 </ul>
             </div>
@@ -381,6 +387,20 @@
         </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal modal-close">
+            <button class="btn-close" data-modal-close>
+                <svg class="close" width="11" height="11">
+                    <use xlink:href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <p class="message">
+                
+            </p>
+        </div>
+    </div>
+    <script src="./js/modal.js">
+    </script>
 </body>
 
 </html>
